@@ -22,7 +22,7 @@
   font-family: "Roboto";
   font-weight: bold;
   font-size: 1.2vw;
-  padding-top: 3vh;
+  padding-top: 3.4vh;
   cursor: pointer;
 }
 
@@ -35,7 +35,11 @@
 }
 
 .navbar-items {
-  width: 80%;
+  width: 100%;
+  padding-left: 10vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .navbar-contact {
@@ -48,4 +52,16 @@
 .items-label {
   font-size: 1.2vw;
   cursor: pointer;
+}
+
+.nav-ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 3vw;
+  padding: 1vh;
+  height: 4vh;
+  width: 25vw;
+  border: 0.1vh solid black;
+  white-space: nowrap;
 }
