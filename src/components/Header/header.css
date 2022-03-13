@@ -100,6 +100,31 @@
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 18px;
+  border-right: 0.15em solid white;
+  animation: typing 2.5s steps(50, end) forwards;
+  overflow: hidden;
+}
+@keyframes typing {
+  0% {
+    width: 0;
+    white-space: nowrap;
+  }
+  20% {
+    width: 20%;
+    white-space: nowrap;
+  }
+  80% {
+    width: 80%;
+    white-space: nowrap;
+  }
+  99% {
+    white-space: nowrap;
+  }
+
+  100% {
+    width: 89%;
+    white-space: normal;
+  }
 }
 
 .text-box-footer {
@@ -109,6 +134,7 @@
   padding-top: 4rem;
   align-items: center;
   padding-right: 6.5rem;
+  cursor: pointer;
 }
 
 .btn-text-box {
@@ -121,23 +147,39 @@
   font-size: 16px;
   border: 1px solid white;
   cursor: pointer;
+  animation: showUp 10s linear both;
+}
+
+@keyframes showUp {
+  from {
+    opacity: 0;
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+    pointer-events: auto;
+  }
 }
 
 .c-label {
   color: white;
   padding-top: 10px;
+  animation: showUp 10s linear both;
 }
 .btn-text-box:hover {
   background-color: rgb(146, 11, 137);
+  cursor: poiter;
+  pointer-events: auto;
 }
 
 .area {
   width: 100%;
-  height: 100vh;
+  height: 40vh;
 }
 
 .circles {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;

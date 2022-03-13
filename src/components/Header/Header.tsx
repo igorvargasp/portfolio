@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           <ul className="nav-ul">
             {itemsHeader.map(({ label, icon }) => {
               return (
-                <li className="items-label">
+                <li className="items-label" key={Math.random()}>
                   <div className="icon-items">{icon}</div>
                   <span>{label}</span>
                 </li>
@@ -27,19 +27,6 @@ const Header: React.FC = () => {
           <span>Contact</span>
         </div>
       </div>
-
-      <div className="text-box">
-        <h1 className="heading-primary">
-          <span className="heading-primary-main">Welcome To My Portfolio</span>
-          <span className="heading-primary-sub">
-            Here you can know everything about me!
-          </span>
-        </h1>
-        <div className="text-box-footer">
-          <span className="btn-text-box">Download</span>
-          <span className="c-label">You can find my curriculum here</span>
-        </div>
-      </div>
       <div className="area">
         <ul className="circles">
           <li></li>
@@ -53,6 +40,26 @@ const Header: React.FC = () => {
           <li></li>
           <li></li>
         </ul>
+      </div>
+
+      <div className="text-box">
+        <h1 className="heading-primary">
+          <span className="heading-primary-main">Welcome To My Portfolio</span>
+          <span className="heading-primary-sub ">
+            Here you can know everything about me!
+          </span>
+        </h1>
+        <div className="text-box-footer">
+          <span
+            className="btn-text-box"
+            onClick={() => {
+              console.log("ola");
+            }}
+          >
+            Download
+          </span>
+          <span className="c-label">You can find my curriculum here</span>
+        </div>
       </div>
     </div>
   );
