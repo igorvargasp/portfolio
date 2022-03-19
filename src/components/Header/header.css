@@ -177,7 +177,6 @@
 .btn-text-box:hover {
   background-color: rgb(146, 11, 137);
   cursor: poiter;
-  pointer-events: auto;
 }
 
 .area {

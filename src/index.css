@@ -14,9 +14,21 @@ body {
   font-size: 16px;
   line-height: 1.7;
   color: #777;
+  background-color: #fbfbfb;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+::-webkit-scrollbar {
+  background-color: #862e9c;
+  width: 7px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #be4bdb;
+}
+::-webkit-scrollbar-thumb {
+  background: #862e9c;
 }
