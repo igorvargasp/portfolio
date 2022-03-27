@@ -1,0 +1,76 @@
+.project-div {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-start;
+  background-color: white;
+  border: 0.5px solid rgba(0, 0, 0, 0.233);
+  padding-bottom: 4rem;
+  position: relative;
+}
+
+.project-div-primary {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  color: #831ba8;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 1.2vw;
+  margin-top: 2rem;
+}
+
+.project-div-secondary {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  gap: 1rem;
+  margin-top: 2rem;
+  height: 100%;
+}
+
+.img-github {
+  width: 10rem;
+  padding-top: 40px;
+}
+
+.img-github:hover {
+  transform: scale(1.25);
+}
+
+.img-linkdin {
+  width: 10rem;
+  padding: 30px 30px 30px 30px;
+}
+
+.img-linkdin:hover {
+  transform: scale(1.25);
+}
+
+.img-gitlab {
+  width: 10rem;
+  padding-top: 8px;
+}
+
+.img-gitlab:hover {
+  transform: scaleY(1.25);
+}
+
+.project-div-logo-github:hover {
+  border: 1px solid black;
+  border-radius: 16px;
+}
+
+.project-div-logo-linkdin:hover {
+  border: 1px solid #0e76a8;
+  border-radius: 16px;
+}
+
+.project-div-logo-gitlab:hover {
+  border: 1px solid orangered;
+  border-radius: 16px;
+  position: 3px;
+}
