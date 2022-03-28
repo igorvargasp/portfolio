@@ -36,7 +36,7 @@
 
 .img-github {
   width: 10vw;
-  padding-top: 1.7vw;
+  padding-top: 2vw;
 }
 
 .img-github:hover {
@@ -61,16 +61,28 @@
   transform: scaleY(1.25);
 }
 
+.project-div-logo-github {
+  width: 10vw;
+  height: 10vw;
+}
+
 .project-div-logo-github:hover {
   border: 1px solid black;
   border-radius: 16px;
 }
-
+.project-div-logo-linkdin {
+  width: 10vw;
+  height: 10vw;
+}
 .project-div-logo-linkdin:hover {
   border: 1px solid #0e76a8;
   border-radius: 16px;
 }
 
+.project-div-logo-gitlab {
+  width: 10vw;
+  height: 10vw;
+}
 .project-div-logo-gitlab:hover {
   border: 1px solid orangered;
   border-radius: 16px;
