@@ -7,7 +7,7 @@ const Projects: React.FC = () => {
     <div className="project-div">
       <div className="project-div-primary">
         <AiFillFolder size={"2vw"} />
-        <h3>Projects</h3>
+        <h3 className="project-title">Projects</h3>
       </div>
       <div className="project-div-secondary">
         <a

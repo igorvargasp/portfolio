@@ -3,18 +3,20 @@
   flex-direction: row;
   width: 100%;
   justify-content: flex-start;
-  background-color: white;
+  background-color: #fbfbfb;
   border: 0.5px solid rgba(0, 0, 0, 0.233);
   padding-bottom: 4rem;
   position: relative;
+  height: 100%;
+  gap: 12rem;
 }
 
 .project-div-primary {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  width: 27%;
   gap: 1rem;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   color: #831ba8;
   font-family: "Roboto";
@@ -33,8 +35,8 @@
 }
 
 .img-github {
-  width: 10rem;
-  padding-top: 40px;
+  width: 10vw;
+  padding-top: 2vw;
 }
 
 .img-github:hover {
@@ -42,8 +44,8 @@
 }
 
 .img-linkdin {
-  width: 10rem;
-  padding: 30px 30px 30px 30px;
+  width: 10vw;
+  padding: 2vw;
 }
 
 .img-linkdin:hover {
@@ -51,8 +53,8 @@
 }
 
 .img-gitlab {
-  width: 10rem;
-  padding-top: 8px;
+  width: 10vw;
+  padding-top: 0.1vw;
 }
 
 .img-gitlab:hover {
@@ -73,4 +75,8 @@
   border: 1px solid orangered;
   border-radius: 16px;
   position: 3px;
+}
+
+.project-title {
+  text-transform: uppercase;
 }
