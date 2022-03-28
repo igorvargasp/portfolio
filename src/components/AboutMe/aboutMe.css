@@ -43,8 +43,9 @@
   gap: 1rem;
 }
 .title-div > h3 {
-  font-size: 2vw;
+  font-size: 1.5vw;
   font-family: "Roboto";
   font-weight: bold;
   color: #831ba8;
+  padding-top: 0.4vw;
 }

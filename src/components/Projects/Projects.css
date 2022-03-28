@@ -8,15 +8,14 @@
   padding-bottom: 4rem;
   position: relative;
   height: 100%;
-  gap: 12rem;
 }
 
 .project-div-primary {
   display: flex;
   flex-direction: row;
-  width: 27%;
+  width: 37%;
   gap: 1rem;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   color: #831ba8;
   font-family: "Roboto";
@@ -28,7 +27,8 @@
 .project-div-secondary {
   display: flex;
   flex-direction: row;
-  width: 50%;
+  align-items: flex-start;
+  width: 40%;
   gap: 1rem;
   margin-top: 2rem;
   height: 100%;
@@ -36,7 +36,7 @@
 
 .img-github {
   width: 10vw;
-  padding-top: 2vw;
+  padding-top: 1.7vw;
 }
 
 .img-github:hover {

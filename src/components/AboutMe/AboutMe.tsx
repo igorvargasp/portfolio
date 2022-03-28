@@ -24,7 +24,7 @@ const AboutMe: React.FC = () => {
         <div className="description-div">
           <div className="title-div">
             <AiOutlineUser size="2.5vw" style={{ color: "#831BA8" }} />
-            <h3>About Me</h3>
+            <h3>ABOUT ME</h3>
           </div>
           <p>
             My name is igor, i’m software developer. I've started to learn how
