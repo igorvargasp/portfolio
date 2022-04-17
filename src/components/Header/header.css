@@ -21,8 +21,19 @@
 }
 
 .navbar-items {
-  width: 79%;
+  width: 60%;
   padding-top: 1%;
+}
+
+.navbar-logo {
+  width: 21%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.navbar-logo-img{
+  width: 4vw;
 }
 
 .nav-ul {
@@ -62,12 +73,22 @@
   margin-right: 0.5rem;
 }
 
+.header-image {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+  height: 100%;
+  margin-top: 1.7rem;
+
+}
+
 
 .text-box {
   width: 67.8%;
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 45%;
   transform: translate(-50%, -50%);
 }
 
@@ -134,18 +155,18 @@
   padding-top: 4rem;
   align-items: center;
   padding-right: 6.5rem;
+  justify-content:center;
   cursor: pointer;
 }
 
 .btn-text-box {
   color: white;
-  background-color: rgba(211, 53, 200);
+  background-color: rgba(157, 170, 242);
   padding: 0.5rem 1rem 0.5rem 1rem;
   border-radius: 12px;
-  font-weight: bold;
+  font-weight: 700;
   font-family: "Roboto";
-  font-size: 16px;
-  border: 1px solid white;
+  font-size: 18px;
   cursor: pointer;
   animation: showUp 10s linear both;
 }
@@ -168,7 +189,7 @@
   animation: showUp 10s linear both;
 }
 .btn-text-box:hover {
-  background-color: rgb(146, 11, 137);
+  background-color: rgb(255, 106, 61);
   cursor: poiter;
 }
 

@@ -17,7 +17,7 @@
 .perfil-photo {
   border-radius: 50%;
   width: 45%;
-  border: 3px solid #831ba8;
+  border:10px solid #18223b;
 }
 
 .description-div {
@@ -27,7 +27,7 @@
 }
 
 .description-div > p {
-  color: #831ba8;
+  color: #18223b;
   font-family: "Roboto";
   font-weight: 500;
   font-size: 1.2vw;
@@ -46,6 +46,17 @@
   font-size: 1.5vw;
   font-family: "Roboto";
   font-weight: bold;
-  color: #831ba8;
+  color: #9DAAF2;
   padding-top: 0.4vw;
+}
+
+.line {
+  border: 3px solid #18223b; 
+  transform: rotate(90deg);
+  width: 15vw;
+  color: #18223b;
+  position: absolute;
+  left: 17.5vw;
+  bottom: 6.8vw;
+
 }

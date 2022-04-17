@@ -5,6 +5,10 @@ import { AiOutlineUser } from "react-icons/ai";
 const AboutMe: React.FC = () => {
   return (
     <div className="about-me-div">
+      <div style={{ width: "100%", position: "relative" }}>
+        <hr className="line" />
+      </div>
+
       <div
         style={{
           width: "100%",
@@ -23,7 +27,7 @@ const AboutMe: React.FC = () => {
 
         <div className="description-div">
           <div className="title-div">
-            <AiOutlineUser size="2.5vw" style={{ color: "#831BA8" }} />
+            <AiOutlineUser size="2.5vw" style={{ color: "#9DAAF2" }} />
             <h3>ABOUT ME</h3>
           </div>
           <p>

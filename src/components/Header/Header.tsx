@@ -1,12 +1,18 @@
 import React from "react";
 import { itemsHeader } from "./itemsHeader";
 import "./header.css";
-import { AiFillContacts } from "react-icons/ai";
 
 const Header: React.FC = () => {
   return (
     <div className="header">
       <div className="navbar">
+        <div className="navbar-logo">
+          <img
+            src={require("../assets/img/—Pngtree—owl dark vector art_5057248.png")}
+            alt="logo"
+            className="navbar-logo-img"
+          />
+        </div>
         <div className="navbar-items ">
           <ul className="nav-ul">
             {itemsHeader.map(({ label, icon }) => {
@@ -39,10 +45,17 @@ const Header: React.FC = () => {
               console.log("ola");
             }}
           >
-            Download
+            Curriculum
           </span>
-          <span className="c-label">You can find my curriculum here</span>
+          <span className="c-label">Download here!</span>
         </div>
+      </div>
+
+      <div className="header-image">
+        <img
+          src={require("../assets/img/—Pngtree—network code application development_6245286.png")}
+          alt="image"
+        />
       </div>
     </div>
   );
