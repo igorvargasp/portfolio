@@ -13,38 +13,21 @@ const Header: React.FC = () => {
               return (
                 <li className="items-label" key={Math.random()}>
                   <div className="icon-items">{icon}</div>
-                  <span>{label}</span>
+                  {label}
                 </li>
               );
             })}
           </ul>
         </div>
-
-        <div className="navbar-contact">
-          <div className="icon-contact">
-            <AiFillContacts size="2vh" color="white" />
-          </div>
-          <span>Contact</span>
-        </div>
-      </div>
-      <div className="area">
-        <ul className="circles">
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul>
       </div>
 
       <div className="text-box">
         <h1 className="heading-primary">
-          <span className="heading-primary-main">Welcome To My Portfolio</span>
+          <span className="heading-primary-welcome">Welcome!</span>
+          <span className="heading-primary-main">
+            I'M
+            <span style={{ color: "#FF6A3D" }}>fullstack</span> developer
+          </span>
           <span className="heading-primary-sub ">
             Here you can know everything about me!
           </span>
