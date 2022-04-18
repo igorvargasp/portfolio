@@ -30,7 +30,7 @@ const AboutMe: React.FC = () => {
             <AiOutlineUser size="2.5vw" style={{ color: "#9DAAF2" }} />
             <h3>ABOUT ME</h3>
           </div>
-          <p>
+          <p style={{ fontWeight: 100 }}>
             My name is igor, i’m software developer. I've started to learn how
             to code at my university where i graduated on 2022, majoring in
             internet systems. I've got a scholarship as a backend developer at
