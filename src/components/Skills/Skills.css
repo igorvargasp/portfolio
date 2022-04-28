@@ -14,5 +14,32 @@
     font-weight: bold;
     color: #9DAAF2;
     text-transform: uppercase;
+    gap: 1rem;
+
+}
+
+.skill-inner-div{
+    width: 100%;
+    display: flex;
+    flex-direction: row; 
+}
+
+.skill-image {
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.skills-itens{
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Roboto";
+    padding-left: 5rem;
 
 }
