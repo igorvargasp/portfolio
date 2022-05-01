@@ -5,7 +5,7 @@ import "./Footer.css";
 import contact from "../assets/img/kisspng-information-technology-software-development-emergi-information-technology-5b0bd7d0aa2d01.0614660615275028006971.png";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { totalmem } from "os";
+require("dotenv").config();
 
 const Footer: React.FC = () => {
   const [name, setName] = useState<string>("");
@@ -32,8 +32,14 @@ const Footer: React.FC = () => {
       email: email,
       message: message,
     };
+
     emailjs
-      .send("service_a0kjtww", "template_hw8y2k8", data, "avo2QEA49d1qlJ41X")
+      .send(
+        process.env.REACT_APP_SERVICE as string,
+        process.env.REACT_APP_TEMPLATE as string,
+        data,
+        process.env.REACT_APP_USER as string
+      )
       .then(
         function (response) {
           toast.dismiss();
@@ -44,12 +50,19 @@ const Footer: React.FC = () => {
         },
         function (err) {
           toast.dismiss();
-          toast.error("Something went wrong, please try again!", {
+          toast.error("Your message could not be sent, please try again!", {
             position: toast.POSITION.BOTTOM_CENTER,
           });
           console.log("failed", err);
         }
-      );
+      )
+      .catch(function (err) {
+        console.log(err);
+        toast.dismiss();
+        toast.error("Something went wrong, please try again!", {
+          position: toast.POSITION.BOTTOM_CENTER,
+        });
+      });
   };
 
   return (
