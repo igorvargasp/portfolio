@@ -1,6 +1,9 @@
 import React from "react";
 import "./Projects.css";
 import { AiFillFolder } from "react-icons/ai";
+import github from "../assets/img/GitHub-Logo.png";
+import gitlab from "../assets/img/gitlab.png";
+import linkdin from "../assets/img/linkedin-logo-png-1837.png";
 
 const Projects: React.FC = () => {
   return (
@@ -14,31 +17,19 @@ const Projects: React.FC = () => {
           href="https://github.com/igorvargasp"
           className="project-div-logo-github"
         >
-          <img
-            src={require("../assets/img/GitHub-Logo.png")}
-            alt="Github"
-            className="img-github"
-          />
+          <img src={github} alt="Github" className="img-github" />
         </a>
         <a
           href="https://gitlab.com/igor.paes"
           className="project-div-logo-gitlab"
         >
-          <img
-            src={require("../assets/img/gitlab.png")}
-            alt="Gitlab"
-            className="img-gitlab"
-          />
+          <img src={gitlab} alt="Gitlab" className="img-gitlab" />
         </a>
         <a
           href="https://www.linkedin.com/in/igorvargasp/"
           className="project-div-logo-linkdin"
         >
-          <img
-            src={require("../assets/img/linkedin-logo-png-1837.png")}
-            alt="Linkdin"
-            className="img-linkdin"
-          />
+          <img src={linkdin} alt="Linkdin" className="img-linkdin" />
         </a>
       </div>
     </div>

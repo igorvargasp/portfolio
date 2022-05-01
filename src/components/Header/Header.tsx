@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { itemsHeader } from "./itemsHeader";
 import "./header.css";
+import logo from "../assets/img/—Pngtree—owl dark vector art_5057248.png";
+import headerImg from "../assets/img/—Pngtree—network code application development_6245286.png";
 
 const Header: React.FC = () => {
   const [item, setItem] = useState<String>("");
@@ -22,11 +24,7 @@ const Header: React.FC = () => {
     <div className="header">
       <div className="navbar">
         <div className="navbar-logo">
-          <img
-            src={require("../assets/img/—Pngtree—owl dark vector art_5057248.png")}
-            alt="logo"
-            className="navbar-logo-img"
-          />
+          <img src={logo} alt="logo" className="navbar-logo-img" />
         </div>
         <div className="navbar-items ">
           <ul className="nav-ul">
@@ -71,10 +69,7 @@ const Header: React.FC = () => {
       </div>
 
       <div className="header-image">
-        <img
-          src={require("../assets/img/—Pngtree—network code application development_6245286.png")}
-          alt="image"
-        />
+        <img src={headerImg} alt="image" />
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React from "react";
 import "./aboutMe.css";
 import { AiOutlineUser } from "react-icons/ai";
+import perfil from "../assets/img/perfil.jpg";
 
 const AboutMe: React.FC = () => {
   return (
@@ -18,11 +19,7 @@ const AboutMe: React.FC = () => {
         }}
       >
         <div className="perfil-div">
-          <img
-            alt="teste"
-            src={require("../assets/img/perfil.jpg")}
-            className="perfil-photo"
-          />
+          <img alt="teste" src={perfil} className="perfil-photo" />
         </div>
 
         <div className="description-div">

@@ -23,13 +23,13 @@ code {
     monospace;
 }
 ::-webkit-scrollbar {
-  background-color: #862e9c;
+  background-color: #F4DB7D;
   width: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #be4bdb;
+  background: #F4DB7D;
 }
 ::-webkit-scrollbar-thumb {
-  background: #862e9c;
+  background: #F4DB7D;
 }

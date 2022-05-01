@@ -3,6 +3,7 @@ import "./Skills.css";
 import data, { SkillsProp } from "./ItemsSkills";
 import { Rating } from "react-simple-star-rating";
 import { AiFillSignal } from "react-icons/ai";
+import skills from "../assets/img/785a1b9c359640da6bc9cfe3670b42ba.png";
 
 const Skill: React.FC = () => {
   return (
@@ -13,10 +14,7 @@ const Skill: React.FC = () => {
       </div>
       <div className="skill-inner-div">
         <div className="skill-image">
-          <img
-            alt="image"
-            src={require("../assets/img/785a1b9c359640da6bc9cfe3670b42ba.png")}
-          />
+          <img alt="image" src={skills} />
         </div>
         <div className="skills-itens">
           <ul style={{ listStyleType: "none", padding: "3rem" }}>
