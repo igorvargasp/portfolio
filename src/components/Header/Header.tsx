@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { itemsHeader } from "./itemsHeader";
 import "./header.css";
 
 const Header: React.FC = () => {
+  const [item, setItem] = useState<String>("");
+
+  const route = (item: String) => {
+    setItem(item);
+    if (item === "Skills") {
+      window.scrollTo(0, 1500);
+    } else if (item === "About Me") {
+      window.scrollTo(0, 800);
+    } else if (item === "Projects") {
+      window.scrollTo(0, 1900);
+    } else {
+      window.scrollTo(0, 2500);
+    }
+  };
+
   return (
     <div className="header">
       <div className="navbar">
@@ -17,7 +32,11 @@ const Header: React.FC = () => {
           <ul className="nav-ul">
             {itemsHeader.map(({ label, icon }) => {
               return (
-                <li className="items-label" key={Math.random()}>
+                <li
+                  className="items-label"
+                  key={Math.random()}
+                  onClick={() => route(label)}
+                >
                   <div className="icon-items">{icon}</div>
                   {label}
                 </li>
